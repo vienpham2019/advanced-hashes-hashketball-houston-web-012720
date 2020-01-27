@@ -58,6 +58,7 @@ end
 # end
 
 def num_points_scored(player_name){
+  binding.pry
   game_hash.each{ |team|
     return team.find{|player| player[:player] == player_name}
   }
