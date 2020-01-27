@@ -59,7 +59,7 @@ end
 
 def num_points_scored(player_name){
   game_hash.each{ |team|
-    return team.find{|player| player[:player] == player_name}.points
+    return team.find{|player| player[:player] == player_name}
   }
 }
 
