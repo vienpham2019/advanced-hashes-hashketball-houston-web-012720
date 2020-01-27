@@ -50,7 +50,7 @@ def game_hash
 end
 
 def num_points_scored(player_name)
-  game_hash.each do |home_away, keys|
+  game_hash.each do |team,keys|
     keys[:players].each do |player|
       return player[:points] if player[:player_name] == player_name
     end
@@ -160,6 +160,16 @@ def long_name_steals_a_ton?
   end
   return true if steals_most == player_with_longest_name
 end
+
+# .each() 
+# .flatten sort the 2D Array in to 1 Array
+
+
+# .each() return the elemet in that array 
+# .map() return the function in new array
+# .find() return the first value / elemet in side the array is macth the function 
+# .select() return the new array with all the new elemet inside the function
+
 
 
 
