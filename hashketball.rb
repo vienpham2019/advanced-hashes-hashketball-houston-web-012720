@@ -57,6 +57,12 @@ end
 #   end
 # end
 
+def num_points_scored(player_name){
+  game_hash.each{ |team|
+    return team.find{|player| player[:player] == player_name}.points
+  }
+}
+
 def shoe_size(player_name)
   game_hash.each do |home_away, keys|
     keys[:players].each do |player|
